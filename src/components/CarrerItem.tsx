@@ -40,15 +40,15 @@ export const CareerItem = ({ id, title, description }: ICareerItemProps) => {
       </div>
 
 
-      <div className='flex gap-8'>
+      <div className='flex gap-8 lg:w-auto  overflow-hidden'>
 
-        <div className='h-80 w-0.5 bg-[#FFFFFF5C] ml-5'/>
+        <div className='lg:h-80 w-0.5 bg-[#FFFFFF5C] ml-5'/>
 
         <div>
           <h4 className='font-semibold mb-3'>
             {title}
           </h4>
-          <p>
+          <p className=''>
             {description}
           </p>
         </div>

@@ -8,7 +8,7 @@ interface ITitleProps {
 export const Title = ({ text }: ITitleProps) => {
   return (
     <div className='flex items-center gap-5'>
-      <h3 className='text-3xl font-medium'>{text}</h3>
+      <h3 className='lg:text-3xl text-2xl font-medium'>{text}</h3>
       <Image
         src={starsImg}
         alt="Stars"

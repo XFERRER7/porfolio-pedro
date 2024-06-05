@@ -3,13 +3,13 @@ import { Title } from './Title'
 
 export const SendMessageSection = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-5'>
-
+    <div className='flex flex-col justify-center items-center gap-5 lg:px-0 px-5'>
+ 
       <Title
         text='Tem ideia sobre o projeto?'
       />
 
-      <p className='text-sm w-96 mt-10'>
+      <p className='text-sm md:w-96 mt-10 text-center'>
         Escreva aqui qualquer coisa sobre você para mostrar o que realmente você está fazendo ou almejando, etc.
       </p>
 

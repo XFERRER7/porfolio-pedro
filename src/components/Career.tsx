@@ -26,13 +26,13 @@ const carrerItems = [
 
 export const Career = () => {
   return (
-    <div className=''>
+    <div className='lg:px-0 px-5'>
 
       <Title
         text='Carreira'
       />
 
-      <div className='flex flex-col gap-5 w-[45rem] mt-10'>
+      <div className='flex flex-col gap-5 md:w-[45rem] mt-10'>
         {
           carrerItems.map(item => (
             <CareerItem key={item.id} id={item.id} title={item.title} description={item.description} />

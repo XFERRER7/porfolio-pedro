@@ -9,7 +9,7 @@ import { TechnologiesSection } from "@/components/TechnologiesSection";
 export default function Home() {
   return (
     <main className="bg-[#101111]">
-      <div className="bg-[#101111] px-28 py-14 min-h-screen max-w-[1600px] w-full mx-auto space-y-20">
+      <div className="bg-[#101111] lg:px-28 md:py-14 py-8 min-h-screen lg:max-w-[1600px] w-screen mx-auto space-y-20 overflow-hidden">
         <Header />
         <TechnologiesSection />
         <Career />

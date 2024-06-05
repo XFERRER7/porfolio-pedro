@@ -8,18 +8,18 @@ import "react-multi-carousel/lib/styles.css";
 
 const responsive: ResponsiveType = {
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 3000, min: 1496 },
     items: 3,
     slidesToSlide: 3 // optional, default to 1.
 
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
+    breakpoint: { max: 1496, min: 873 },
     items: 2,
     slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 873, min: 0 },
     items: 1,
     slidesToSlide: 1 // optional, default to 1.
   }
@@ -27,17 +27,14 @@ const responsive: ResponsiveType = {
 
 export const Recommendations = () => {
   return (
-    <div className=''>
+    <div className='lg:px-0 px-5'>
       <Title
-        text='Depoimentos de clientes'
+        text='Recomendações'
       />
 
       <Carousel
-        className='mt-10 gap-10'
+        className='mt-10 gap-10 flex'
         responsive={responsive}
-        autoPlay={true}
-        autoPlaySpeed={3000}
-        transitionDuration={1500}
       >
 
         <Card
@@ -81,8 +78,8 @@ interface ICardProps {
 const Card = ({ name, position, quote, image }: ICardProps) => {
 
   return (
-    <div className='p-[1.1px] rounded-3xl recommendation-card w-[25.5rem] container-selection-not-allowed cursor-pointer'>
-      <div className='p-[1.5px] rounded-3xl w-[25.5rem] bg-[#151515]'>
+    <div className='p-[1.1px] rounded-3xl recommendation-card md:w-[25.5rem] mini:w-[23rem] w-full container-selection-not-allowed cursor-pointer lg:mx-0 mx-auto'>
+      <div className='p-[1.5px] rounded-3xl md:w-[25.5rem] mini:w-[23rem]  w-full bg-[#151515]'>
         <div className='h-48 bg-tertiary-100 rounded-3xl text-white flex flex-col gap-5 justify-center px-5 py-5 overflow-hidden'>
           <div className='flex items-center justify-between'>
 

@@ -20,6 +20,11 @@ const config: Config = {
         secondary: {
           100: '#FFD49C'
         }
+      },
+      screens: {
+        mini: '389px',
+        mobile: "540px",
+        lg: "1116px",
       }
     },
   },
