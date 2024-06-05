@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.menu-border {
+  background: rgb(122,135,251);
+  background: linear-gradient(267deg, rgba(122,135,251,1) 40%, rgba(255,212,156,1) 100%);
+}
+
+.button-gradient {
+  background: rgb(122,135,251);
+  background: linear-gradient(90deg, rgba(122,135,251,1) 40%, rgba(255,212,156,1) 100%);  
+}
+
+.recommendation-card {
+  background: rgb(255,212,156);
+  background: linear-gradient(145deg, rgba(255,212,156,1) 10%, rgba(152,152,230,1) 32%, rgba(21,21,21,1) 51%);  
+}
+
+.container-selection-not-allowed {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

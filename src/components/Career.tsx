@@ -26,13 +26,13 @@ const carrerItems = [
 
 export const Career = () => {
   return (
-    <div className='py-8'>
+    <div className=''>
 
       <Title
         text='Carreira'
       />
 
-      <div className='flex flex-col gap-5 w-[45rem] mt-14'>
+      <div className='flex flex-col gap-5 w-[45rem] mt-10'>
         {
           carrerItems.map(item => (
             <CareerItem key={item.id} id={item.id} title={item.title} description={item.description} />

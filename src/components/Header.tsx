@@ -23,7 +23,7 @@ export const Header = () => {
             </p>
 
             <button
-              className="bg-primary-100 text-black px-5 py-2 rounded-full w-48"
+              className="button-gradient text-black px-5 py-3 rounded-lg w-48"
             >
               Veja meu LinkedIn
             </button>
