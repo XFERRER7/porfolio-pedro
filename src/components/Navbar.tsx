@@ -62,6 +62,7 @@ export const Navbar = () => {
           </div>
 
           <ul className='text-2xl text-quaternary-100 w-full h-full flex flex-col items-center pt-16 gap-20'>
+            <Switch />
             <a className='cursor-pointer' href='#about'
               onClick={toggleMenu}
             >
