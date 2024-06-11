@@ -1,6 +1,9 @@
 import Image from "next/image";
 import logo from '@/assets/logo.svg';
-import { HomeIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react"
+import linkedinIcon from '@/assets/linkedinIcon.svg';
+import whatsappIcon from '@/assets/whatsappIcon.svg';
+import gmailIcon from '@/assets/gmailIcon.svg';
 
 export const Footer = () => {
   return (
@@ -21,14 +24,35 @@ export const Footer = () => {
 
 
       <div className="p-0.5 menu-border rounded-full mx-auto">
-        <div className="h-12 md:w-[26rem] rounded-full flex items-center justify-between md:text-sm text-xs gap-4 pr-5 py-1 bg-[#1C1C1C]">
+        <div className="h-12 md:w-[26rem] rounded-full flex items-center justify-around md:text-sm text-xs gap-4 py-1 bg-[#1C1C1C]">
 
-          <div className="h-full w-14 rounded-full bg-[#292929] flex items-center justify-center">
-            <HomeIcon size={18} />
-          </div>
-          <a href="#">Sobre mim</a>
-          <a href="#">Projetos</a>
-          <a href="#">Contato</a>
+          <a href="#">
+            <Image
+              src={linkedinIcon}
+              alt="icon"
+              height={50}
+              width={50}
+              className="h-8 w-8"
+            />
+          </a>
+          <a href="#">
+            <Image
+              src={gmailIcon}
+              alt="icon"
+              height={50}
+              width={50}
+              className="h-10 w-10"
+            />
+          </a>
+          <a href="#">
+            <Image
+              src={whatsappIcon}
+              alt="icon"
+              height={50}
+              width={50}
+              className="h-8 w-8"
+            />
+          </a>
 
         </div>
       </div>

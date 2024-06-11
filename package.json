@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.2.10",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "typewriter-effect": "^2.21.0",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",
