@@ -23,8 +23,8 @@ export const Footer = () => {
       </div>
 
 
-      <div className="p-0.5 menu-border rounded-full mx-auto">
-        <div className="h-12 md:w-[26rem] rounded-full flex items-center justify-around md:text-sm text-xs gap-4 py-1 bg-[#1C1C1C]">
+      <div className="p-0.5 menu-border rounded-full mx-auto md:w-auto w-full">
+        <div className="h-12 md:w-[26rem] w-full rounded-full flex items-center justify-around md:text-sm text-xs gap-4 py-1 bg-[#1C1C1C]">
 
           <a href="#">
             <Image

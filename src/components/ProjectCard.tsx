@@ -5,9 +5,10 @@ interface IProjectCardProps {
   name: string;
   description: string;
   image: StaticImageData;
+  buttonText: string;
 }
 
-export const ProjectCard = ({ name, description, image }: IProjectCardProps) => {
+export const ProjectCard = ({ name, description, image, buttonText }: IProjectCardProps) => {
   return (
     <div className='w-full pb-10 bg-white rounded-3xl mt-10 text-black px-10 pt-20 flex justify-between relative mx-auto md:h-auto h-[44rem]'>
 
@@ -21,7 +22,7 @@ export const ProjectCard = ({ name, description, image }: IProjectCardProps) => 
         </p>
 
         <button className='bg-black md:w-60 w-full h-[3.8rem] rounded-md text-white flex items-center justify-center gap-5 font-bold mt-10'>
-          Descubra
+          {buttonText}
           <ArrowRight size={24} />
         </button>
       </div>

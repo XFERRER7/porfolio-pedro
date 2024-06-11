@@ -19,7 +19,7 @@ export const CareerItem = ({ id, title, description }: ICareerItemProps) => {
   }
 
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col gap-5' data-aos='fade-up' data-aos-once="true">
 
       <div className='flex gap-8'>
 

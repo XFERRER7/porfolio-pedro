@@ -5,6 +5,7 @@ import smartphone1 from '@/assets/smartphone.png'
 import smartphone2 from '@/assets/smartphone2.png'
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useLanguage } from '@/hooks/useLanguage'
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -25,24 +26,15 @@ const responsive: ResponsiveType = {
   }
 };
 
-const projectsList = [
-  {
-    name: 'Kiwi Manga',
-    description: 'Meu aplicativo de sucesso, desenvolvido com um grupo de amigos, chama-se Kiwi Manga. É um aplicativo que facilita o acesso dos leitores ao manga e está disponível na Play Store com mais de 100.000 downloads e 5.000 usuários ativos. Eu o criei usando Flutter para o front-end e Next.js para o back-end. Foi uma experiência desafiadora, mas gratificante, ver o impacto positivo que teve em seus usuários.',
-    image: smartphone1
-  },
-  {
-    name: 'Wealt: Finanças Pessoais',
-    description: 'Meu aplicativo de sucesso, desenvolvido com um grupo de amigos, chama-se Kiwi Manga. É um aplicativo que facilita o acesso dos leitores ao manga e está disponível na Play Store com mais de 100.000 downloads e 5.000 usuários ativos. Eu o criei usando Flutter para o front-end e Next.js para o back-end. Foi uma experiência desafiadora, mas gratificante, ver o impacto positivo que teve em seus usuários.',
-    image: smartphone2
-  }
-]
 
 export const Projects = () => {
+
+  const { translations } = useLanguage()
+
   return (
     <div className='lg:px-0 px-5' id='projects'>
       <Title
-        text='Meus Projetos'
+        text={translations.projectsSection.title}
       />
 
       <Carousel
@@ -52,12 +44,13 @@ export const Projects = () => {
         autoPlaySpeed={8000}
       >
         {
-          projectsList.map((project, index) => (
+          translations.projectsSection.projectsList.map((project, index) => (
             <ProjectCard
               key={index}
               name={project.name}
               description={project.description}
               image={project.image}
+              buttonText={translations.projectsSection.buttonText}
             />
           ))
         }
