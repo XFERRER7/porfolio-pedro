@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import Typewriter from 'typewriter-effect'
 import { useLanguage } from "@/hooks/useLanguage";
-import useLanguageStore from "@/store/langStore";
+import Image from "next/image";
+import mainBg from "@/assets/main-bg.png";
+import star from "@/assets/stars.svg";
 
 
 export const Header = () => {
@@ -19,13 +21,27 @@ export const Header = () => {
     <div className='w-full h-[calc(100vh-112px)] overflow-hidden relative' id='about'>
 
       <Navbar />
-      
-      <div className='mt-20 h-full flex justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+
+      <div className='mt-24 w-full h-full flex justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+
+        <Image
+          src={mainBg}
+          alt="Main Background"
+          className="w-full h-[108vh] absolute -top-8 lg:block "
+        />
+
         {/* <Image
-        src={mainBg}
-        alt="Main Background"
-        className="w-full h-screen absolute -top-8 lg:block hidden"
-      /> */}
+          src={star}
+          alt="Star"
+          className="absolute top-[3.5rem] right-[12.3rem]"
+        />
+
+        <Image
+          src={star}
+          alt="Star"
+          className="absolute bottom-[10.8rem] left-[12.3rem]"
+        /> */}
+
 
         <div className='flex flex-col gap-5 w-[30rem] items-center mt-40'>
 
@@ -33,7 +49,7 @@ export const Header = () => {
 
           <p className='text-center lg:text-base text-sm lg:w-auto w-3/5 h-32'>
             <Typewriter
-              key={key} // This ensures the Typewriter re-renders when the key changes
+              key={key}
               options={{
                 delay: 20,
               }}
