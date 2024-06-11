@@ -44,12 +44,14 @@ export const pt = {
       {
         name: "Kiwi Manga",
         description: "Meu aplicativo de sucesso, desenvolvido com um grupo de amigos, chama-se Kiwi Manga. É um aplicativo que facilita o acesso dos leitores ao manga e está disponível na Play Store com mais de 100.000 downloads e 5.000 usuários ativos. Eu o criei usando Flutter para o front-end e Next.js para o back-end. Foi uma experiência desafiadora, mas gratificante, ver o impacto positivo que teve em seus usuários.",
-        image: smartphone1
+        image: smartphone1,
+        linkProject: 'https://apkpure.com/br/kiwi-manga-manga-manhwa/app.kiwimanga.kiwi_manga'
       },
       {
         name: "Wealt: Finanças Pessoais",
         description: "Meu aplicativo de sucesso, desenvolvido com um grupo de amigos, chama-se Kiwi Manga. É um aplicativo que facilita o acesso dos leitores ao manga e está disponível na Play Store com mais de 100.000 downloads e 5.000 usuários ativos. Eu o criei usando Flutter para o front-end e Next.js para o back-end. Foi uma experiência desafiadora, mas gratificante, ver o impacto positivo que teve em seus usuários.",
-        image: smartphone2
+        image: smartphone2,
+        linkProject: 'https://wealt.app/'
       }
     ],
     buttonText: "Descubra"
@@ -94,7 +96,6 @@ export const pt = {
     description: "Abra as portas para novas oportunidades e descubra como podemos fazer grandes coisas juntos!",
     buttonText: "Me mande uma mensagem!"
   }
-  
 }
 
 export const en = {
@@ -139,12 +140,14 @@ export const en = {
       {
         name: "Kiwi Manga",
         description: "My successful app, developed with a group of friends, is called Kiwi Manga. It is an app that facilitates readers' access to manga and is available on the Play Store with over 100,000 downloads and 5,000 active users. I created it using Flutter for the front-end and Next.js for the back-end. It was a challenging but rewarding experience to see the positive impact it had on its users.",
-        image: smartphone1
+        image: smartphone1,
+        linkProject: 'https://apkpure.com/br/kiwi-manga-manga-manhwa/app.kiwimanga.kiwi_manga'
       },
       {
         name: "Wealt: Personal Finance",
         description: "My successful app, developed with a group of friends, is called Kiwi Manga. It is an app that facilitates readers' access to manga and is available on the Play Store with over 100,000 downloads and 5,000 active users. I created it using Flutter for the front-end and Next.js for the back-end. It was a challenging but rewarding experience to see the positive impact it had on its users.",
-        image: smartphone2
+        image: smartphone2,
+        linkProject: 'https://wealt.app/'
       }
     ],
     buttonText: "Discover"
@@ -189,5 +192,4 @@ export const en = {
     description: "Open the doors to new opportunities and discover how we can do great things together!",
     buttonText: "Send me a message!"
   }
-  
 }

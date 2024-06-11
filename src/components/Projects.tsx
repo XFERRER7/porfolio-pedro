@@ -51,6 +51,7 @@ export const Projects = () => {
               description={project.description}
               image={project.image}
               buttonText={translations.projectsSection.buttonText}
+              linkProject={project.linkProject}
             />
           ))
         }

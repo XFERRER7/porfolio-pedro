@@ -6,9 +6,10 @@ interface IProjectCardProps {
   description: string;
   image: StaticImageData;
   buttonText: string;
+  linkProject: string;
 }
 
-export const ProjectCard = ({ name, description, image, buttonText }: IProjectCardProps) => {
+export const ProjectCard = ({ name, description, image, buttonText, linkProject }: IProjectCardProps) => {
   return (
     <div className='w-full pb-10 bg-white rounded-3xl mt-10 text-black px-10 pt-20 flex justify-between relative mx-auto md:h-auto h-[44rem]'>
 
@@ -21,7 +22,9 @@ export const ProjectCard = ({ name, description, image, buttonText }: IProjectCa
           {description}
         </p>
 
-        <button className='bg-black md:w-60 w-full h-[3.8rem] rounded-md text-white flex items-center justify-center gap-5 font-bold mt-10'>
+        <button className='bg-black md:w-60 w-full h-[3.8rem] rounded-md text-white flex items-center justify-center gap-5 font-bold mt-10'
+        onClick={() => window.open(linkProject, '_blank')}
+        >
           {buttonText}
           <ArrowRight size={24} />
         </button>

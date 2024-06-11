@@ -20,6 +20,7 @@ export const SendMessageSection = () => {
 
       <button
         className='button-gradient px-2 h-10 text-black rounded-full text-sm font-medium'
+        onClick={() => window.open('mailto:pedroprogrammer@proton.me', '_blank')}
       >
         {translations.contactSection.buttonText}
       </button>

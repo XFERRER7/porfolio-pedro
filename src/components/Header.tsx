@@ -24,11 +24,11 @@ export const Header = () => {
 
       <div className='mt-24 w-full h-full flex justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
 
-        <Image
+        {/* <Image
           src={mainBg}
           alt="Main Background"
           className="w-full h-[108vh] absolute -top-8 lg:block "
-        />
+        /> */}
 
         {/* <Image
           src={star}
