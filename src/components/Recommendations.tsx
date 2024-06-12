@@ -9,15 +9,15 @@ import { useLanguage } from '@/hooks/useLanguage'
 
 const responsive: ResponsiveType = {
   desktop: {
-    breakpoint: { max: 3000, min: 1496 },
+    breakpoint: { max: 3000, min: 1300 },
     items: 3,
     slidesToSlide: 3 // optional, default to 1.
 
   },
   tablet: {
-    breakpoint: { max: 1496, min: 873 },
+    breakpoint: { max: 1300, min: 873 },
     items: 2,
-    slidesToSlide: 2 // optional, default to 1.
+    slidesToSlide: 1 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 873, min: 0 },
@@ -73,8 +73,8 @@ interface ICardProps {
 const Card = ({ name, position, quote, image }: ICardProps) => {
 
   return (
-    <div className='p-[1.1px] rounded-3xl recommendation-card md:w-[25.5rem] mini:w-[23rem] w-full container-selection-not-allowed cursor-pointer lg:mx-0 mx-auto'>
-      <div className='p-[1.5px] rounded-3xl md:w-[25.5rem] mini:w-[23rem]  w-full bg-[#151515]'>
+    <div className='p-[1.1px] rounded-3xl recommendation-card xl:w-[22rem] md:w-[28rem] mini:w-[22rem] w-full container-selection-not-allowed cursor-pointer lg:mx-0 mx-auto'>
+      <div className='p-[1.5px] rounded-3xl xl:w-[22rem] md:w-[28rem] mini:w-[22rem]  w-full bg-[#151515]'>
         <div className='h-48 bg-tertiary-100 rounded-3xl text-white flex flex-col gap-5 justify-center px-5 py-5 overflow-hidden'>
           <div className='flex items-center justify-between'>
 

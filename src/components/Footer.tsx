@@ -27,31 +27,33 @@ export const Footer = () => {
       <div className="p-0.5 menu-border rounded-full mx-auto md:w-auto w-full">
         <div className="h-12 md:w-[26rem] w-full rounded-full flex items-center justify-around md:text-sm text-xs gap-4 py-1 bg-[#1C1C1C]">
 
-          <Link href="https://www.linkedin.com/in/pedro-developeer" target="_blank">
-            <Image
-              src={linkedinIcon}
-              alt="icon"
-              height={50}
-              width={50}
-              className="h-8 w-8"
-            />
-          </Link>
-          <Link href="mailto:pedroprogrammer@proton.me" target="_blank">
-            <Image
-              src={gmailIcon}
-              alt="icon"
-              height={50}
-              width={50}
-              className="h-10 w-10"
-            />
-          </Link>
-          <Link href="https://wa.me/556284737305" target="_blank">
+          <Link href="https://wa.me/556284737305" target="_blank" className="h-12 w-16 rounded-full bg-[#292929] flex items-center justify-center">
             <Image
               src={whatsappIcon}
               alt="icon"
               height={50}
               width={50}
-              className="h-8 w-8"
+              className="h-6 w-6"
+            />
+          </Link>
+
+          <Link href="mailto:pedroprogrammer@proton.me" target="_blank" className="h-12 w-16 rounded-full bg-[#292929] flex items-center justify-center">
+            <Image
+              src={gmailIcon}
+              alt="icon"
+              height={50}
+              width={50}
+              className="h-6 w-6"
+            />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/pedro-developeer" target="_blank" className="h-12 w-16 rounded-full bg-[#292929] flex items-center justify-center">
+            <Image
+              src={linkedinIcon}
+              alt="icon"
+              height={50}
+              width={50}
+              className="h-6 w-6"
             />
           </Link>
 
